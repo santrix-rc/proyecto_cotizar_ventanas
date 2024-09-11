@@ -24,3 +24,24 @@ El sistema debe mostrar un mensaje de error si se intenta realizar el cálculo s
 Historial de cotizaciones:
 
 El sistema debe guardar y mostrar el historial de cotizaciones generadas durante la ejecución de la aplicación.
+
+
+Requerimientos No Funcionales
+Interfaz gráfica:
+
+El sistema debe proporcionar una interfaz gráfica de usuario (GUI) simple e intuitiva utilizando Tkinter.
+La interfaz debe ser lo suficientemente clara para que cualquier usuario pueda navegar y utilizar las funcionalidades sin necesidad de conocimientos técnicos.
+Eficiencia:
+
+El cálculo del costo debe realizarse de manera eficiente al momento de presionar el botón de "Calcular Cotización", con una respuesta rápida para el usuario.
+El sistema debe manejar un volumen moderado de cotizaciones (hasta 100 por sesión) sin afectar significativamente el rendimiento.
+Portabilidad:
+
+El sistema debe ser compatible con sistemas operativos Windows, macOS y Linux, dado que está implementado en Python con Tkinter.
+Mantenibilidad:
+
+El código debe ser claro y seguir las buenas prácticas de programación, incluyendo el cumplimiento de las guías de estilo PEP-8.
+El proyecto debe estar estructurado de manera modular para facilitar futuras modificaciones o ampliaciones (por ejemplo, agregar nuevos estilos de ventana o tipos de vidrio).
+Seguridad:
+
+El sistema debe validar y manejar correctamente los inputs del usuario para evitar errores o comportamientos inesperados.
