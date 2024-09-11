@@ -1,4 +1,3 @@
-
 class Ventana:
     PRECIOS_ACABADO = {
         'Pulido': 50700,
