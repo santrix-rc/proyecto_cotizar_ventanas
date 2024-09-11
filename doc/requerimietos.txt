@@ -1,1 +1,26 @@
 
+Requerimientos Funcionales
+Ingreso de datos de la ventana:
+
+El sistema debe permitir al usuario ingresar las dimensiones de la ventana (ancho y alto) mediante la interfaz gráfica.
+El sistema debe permitir al usuario seleccionar el estilo de ventana (O, XO, OXXO, etc.).
+El sistema debe permitir al usuario seleccionar el tipo de vidrio (Transparente, Bronce, Azul).
+El sistema debe permitir al usuario seleccionar si el vidrio es esmerilado o no mediante un checkbox.
+Cálculo de costos:
+
+El sistema debe calcular el costo total de la ventana basada en las dimensiones, estilo, tipo de vidrio, y acabado del aluminio.
+El costo del vidrio debe calcularse según el área del vidrio (ancho x alto).
+El costo del aluminio debe calcularse por el perímetro de la ventana.
+El sistema debe incluir el costo de las esquinas y las chapas si la ventana tiene al menos una nave que se puede abrir (X).
+Si se selecciona vidrio esmerilado, se debe añadir el costo adicional por esmerilado al costo del vidrio.
+Visualización del costo:
+
+El sistema debe mostrar el costo total de la ventana calculada en la interfaz gráfica.
+El sistema debe permitir visualizar el historial de cotizaciones realizadas durante la ejecución.
+Validación de datos:
+
+El sistema debe validar que los campos numéricos (ancho y alto) no estén vacíos ni contengan valores no válidos.
+El sistema debe mostrar un mensaje de error si se intenta realizar el cálculo sin que todos los campos estén completos o si hay datos inválidos.
+Historial de cotizaciones:
+
+El sistema debe guardar y mostrar el historial de cotizaciones generadas durante la ejecución de la aplicación.
