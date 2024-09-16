@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1463pt" height="192pt" viewBox="0.00 0.00 1463.17 191.80">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 187.8)">
+<title>G</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-187.8 1459.172,-187.8 1459.172,4 -4,4"/>
+<!-- Ventana -->
+<g id="node1" class="node">
+<title>Ventana</title>
+<polygon fill="none" stroke="#000000" points="411.6944,-74.5 411.6944,-183.3 778.9784,-183.3 778.9784,-74.5 411.6944,-74.5"/>
+<text text-anchor="middle" x="443.0149" y="-124.7" font-family="Times,serif" font-size="14.00" fill="#000000">Ventana</text>
+<polyline fill="none" stroke="#000000" points="474.3354,-74.5 474.3354,-183.3 "/>
+<text text-anchor="middle" x="535.4073" y="-166.7" font-family="Times,serif" font-size="14.00" fill="#000000">- ancho: float</text>
+<text text-anchor="middle" x="535.4073" y="-149.9" font-family="Times,serif" font-size="14.00" fill="#000000"> - alto: float</text>
+<text text-anchor="middle" x="535.4073" y="-133.1" font-family="Times,serif" font-size="14.00" fill="#000000"> - estilo: str</text>
+<text text-anchor="middle" x="535.4073" y="-116.3" font-family="Times,serif" font-size="14.00" fill="#000000"> - tipo_vidrio: str</text>
+<text text-anchor="middle" x="535.4073" y="-99.5" font-family="Times,serif" font-size="14.00" fill="#000000"> - esmerilado: bool</text>
+<text text-anchor="middle" x="535.4073" y="-82.7" font-family="Times,serif" font-size="14.00" fill="#000000"> - costo_total: float</text>
+<polyline fill="none" stroke="#000000" points="596.4792,-74.5 596.4792,-183.3 "/>
+<text text-anchor="middle" x="687.7288" y="-124.7" font-family="Times,serif" font-size="14.00" fill="#000000">+ calcular_costo_total(): float</text>
+</g>
+<!-- CalculoCosto -->
+<g id="node2" class="node">
+<title>CalculoCosto</title>
+<polygon fill="none" stroke="#000000" points="853.0682,-99.7 853.0682,-158.1 1455.172,-158.1 1455.172,-99.7 853.0682,-99.7"/>
+<text text-anchor="middle" x="899.1776" y="-124.7" font-family="Times,serif" font-size="14.00" fill="#000000">CalculoCosto</text>
+<polyline fill="none" stroke="#000000" points="945.287,-99.7 945.287,-158.1 "/>
+<text text-anchor="middle" x="1200.2295" y="-141.5" font-family="Times,serif" font-size="14.00" fill="#000000">+ calcular_costo_vidrio(ancho: float, alto: float, tipo_vidrio: str, esmerilado: bool): float</text>
+<text text-anchor="middle" x="1200.2295" y="-124.7" font-family="Times,serif" font-size="14.00" fill="#000000"> + calcular_costo_aluminio(ancho: float, alto: float): float</text>
+<text text-anchor="middle" x="1200.2295" y="-107.9" font-family="Times,serif" font-size="14.00" fill="#000000"> + calcular_costo_esquinas_chapas(estilo: str): float</text>
+</g>
+<!-- Ventana&#45;&gt;CalculoCosto -->
+<g id="edge2" class="edge">
+<title>Ventana-&gt;CalculoCosto</title>
+<path fill="none" stroke="#000000" d="M779.077,-128.9C799.7655,-128.9 821.2498,-128.9 842.9939,-128.9"/>
+<polygon fill="#000000" stroke="#000000" points="843.0008,-132.4001 853.0007,-128.9 843.0007,-125.4001 843.0008,-132.4001"/>
+<text text-anchor="middle" x="816.0233" y="-133.1" font-family="Times,serif" font-size="14.00" fill="#000000">usa</text>
+</g>
+<!-- HistorialCotizaciones -->
+<g id="node3" class="node">
+<title>HistorialCotizaciones</title>
+<polygon fill="none" stroke="#000000" points="980.8161,-16.7 980.8161,-75.1 1327.4241,-75.1 1327.4241,-16.7 980.8161,-16.7"/>
+<text text-anchor="middle" x="1049.4662" y="-41.7" font-family="Times,serif" font-size="14.00" fill="#000000">HistorialCotizaciones</text>
+<polyline fill="none" stroke="#000000" points="1118.1163,-16.7 1118.1163,-75.1 "/>
+<text text-anchor="middle" x="1222.7702" y="-58.5" font-family="Times,serif" font-size="14.00" fill="#000000">- cotizaciones: list</text>
+<text text-anchor="middle" x="1222.7702" y="-41.7" font-family="Times,serif" font-size="14.00" fill="#000000"> + agregar_cotizacion(costo: float)</text>
+<text text-anchor="middle" x="1222.7702" y="-24.9" font-family="Times,serif" font-size="14.00" fill="#000000"> + mostrar_historial(): list</text>
+</g>
+<!-- Ventana&#45;&gt;HistorialCotizaciones -->
+<g id="edge3" class="edge">
+<title>Ventana-&gt;HistorialCotizaciones</title>
+<path fill="none" stroke="#000000" d="M779.0514,-100.9841C803.9259,-97.2383 829.1205,-93.4619 853.0682,-89.9 890.9571,-84.2645 931.5383,-78.291 970.246,-72.6232"/>
+<polygon fill="#000000" stroke="#000000" points="971.187,-76.0229 980.5748,-71.1115 970.1733,-69.0966 971.187,-76.0229"/>
+<text text-anchor="middle" x="816.0233" y="-101.1" font-family="Times,serif" font-size="14.00" fill="#000000">guarda</text>
+</g>
+<!-- InterfazGrafica -->
+<g id="node4" class="node">
+<title>InterfazGrafica</title>
+<polygon fill="none" stroke="#000000" points="0,-.5 0,-109.3 325.9328,-109.3 325.9328,-.5 0,-.5"/>
+<text text-anchor="middle" x="50.7392" y="-50.7" font-family="Times,serif" font-size="14.00" fill="#000000">InterfazGrafica</text>
+<polyline fill="none" stroke="#000000" points="101.4784,-.5 101.4784,-109.3 "/>
+<text text-anchor="middle" x="213.7056" y="-92.7" font-family="Times,serif" font-size="14.00" fill="#000000">+ ingresar_dimensiones()</text>
+<text text-anchor="middle" x="213.7056" y="-75.9" font-family="Times,serif" font-size="14.00" fill="#000000"> + seleccionar_estilo()</text>
+<text text-anchor="middle" x="213.7056" y="-59.1" font-family="Times,serif" font-size="14.00" fill="#000000"> + seleccionar_tipo_vidrio()</text>
+<text text-anchor="middle" x="213.7056" y="-42.3" font-family="Times,serif" font-size="14.00" fill="#000000"> + seleccionar_acabado_esmerilado()</text>
+<text text-anchor="middle" x="213.7056" y="-25.5" font-family="Times,serif" font-size="14.00" fill="#000000"> + mostrar_costo(costo: float)</text>
+<text text-anchor="middle" x="213.7056" y="-8.7" font-family="Times,serif" font-size="14.00" fill="#000000"> + mostrar_historial()</text>
+</g>
+<!-- InterfazGrafica&#45;&gt;Ventana -->
+<g id="edge1" class="edge">
+<title>InterfazGrafica-&gt;Ventana</title>
+<path fill="none" stroke="#000000" d="M326.1189,-82.8235C350.7263,-87.0351 376.3109,-91.4138 401.487,-95.7227"/>
+<polygon fill="#000000" stroke="#000000" points="401.0409,-99.1972 411.488,-97.4344 402.2218,-92.2975 401.0409,-99.1972"/>
+<text text-anchor="middle" x="368.8136" y="-98.1" font-family="Times,serif" font-size="14.00" fill="#000000">modifica</text>
+</g>
+<!-- InterfazGrafica&#45;&gt;HistorialCotizaciones -->
+<g id="edge4" class="edge">
+<title>InterfazGrafica-&gt;HistorialCotizaciones</title>
+<path fill="none" stroke="#000000" d="M326.1821,-49.8692C354.6835,-49.1532 384.0508,-48.5188 411.6944,-48.1 602.0883,-45.2157 819.9773,-44.9277 970.2244,-45.2"/>
+<polygon fill="#000000" stroke="#000000" points="970.4661,-48.7003 980.4728,-45.2196 970.4795,-41.7004 970.4661,-48.7003"/>
+<text text-anchor="middle" x="595.3364" y="-53.1" font-family="Times,serif" font-size="14.00" fill="#000000">visualiza</text>
+</g>
+</g>
+</svg>
